@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AR Consultoría Técnica</title>
+  <meta name="description" content="Consultoría Técnica en CABA: Ley 5920, habilitaciones comerciales, higiene y seguridad, trámites APRA, DGROC, AGC, planeamiento urbano y más." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet" />
+  <style>
+    /* RESET */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #d5f0f9 0%, #9bdafc 100%);
+      color: #003d66;
+      line-height: 1.6;
+      padding: 0 20px 50px 20px;
+      overflow-x: hidden;
+    }
+    /* HEADER */
+    header {
+      background: linear-gradient(90deg, #001f3f, #00688b);
+      padding: 30px 50px;
+      color: #e0f7fa;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      font-family: 'Montserrat', sans-serif;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+      border-bottom: 4px solid #00bcd4;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-weight: 900;
+      font-size: 2.8rem;
+      letter-spacing: 4px;
+      margin: 0;
+      text-shadow: 0 0 8px #00bcd4cc;
+      cursor: default;
+    }
+    .nav-logo-container {
+  display: flex;
+  align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+    nav ul li a {
+      color: #a0e7f9;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 12px 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: inset 0 0 0 0 #a0e7f9;
+      transition: all 0.35s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+      color: #003d66;
+      background-color: #a0e7f9;
+      box-shadow: inset 200px 0 0 0 #a0e7f9;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      outline: none;
+    }
+    /* MAIN CONTENIDO */
+    main {
+      max-width: 1100px;
+      margin: 50px auto 0 auto;
+    }
+    section {
+      background: rgba(255 255 255 / 0.9);
+      margin-bottom: 45px;
+      padding: 30px 40px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(0,61,102,0.2);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s forwards;
+    }
+    section:nth-child(odd) {
+      animation-delay: 0.15s;
+    }
+    section:nth-child(even) {
+      animation-delay: 0.3s;
+    }
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 2.2rem;
+      color: #00688b;
+      border-bottom: 4px solid #00bcd4;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+      letter-spacing: 1.3px;
+    }
+    p {
+      font-size: 1.15rem;
+      color: #003d66;
+      margin-bottom: 18px;
+    }
+    ul {
+      margin-left: 25px;
+      color: #004a75;
+      margin-bottom: 25px;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    strong {
+      color: #007ea7;
+      font-weight: 700;
+    }
+    /* CTA */
+    .cta {
+      background: #00bcd4;
+      color: #fff;
+      text-align: center;
+      padding: 40px 25px;
+      border-radius: 30px;
+      box-shadow: 0 10px 25px rgba(0,188,212,0.5);
+      font-family: 'Montserrat', sans-serif;
+      animation: fadeUp 1s forwards;
+      animation-delay: 0.45s;
+    }
+    .cta h3 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      font-weight: 900;
+      letter-spacing: 1.2px;
+    }
+    .cta p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 25px;
+      color: #e0f7fa;
+      text-shadow: 0 0 4px #003d66cc;
+    }
+    .boton {
+      background: #e0f7fa;
+      color: #00688b;
+      padding: 15px 40px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 6px 18px rgba(0,104,139,0.4);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      display: inline-block;
+      letter-spacing: 1.4px;
+    }
+    .boton:hover,
+    .boton:focus {
+      background: #a3e5fd;
+      color: #a0e7f9;
+      outline: none;
+    }
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #88dfff;
+      color: #a0d4e7;
+      font-size: 0.9rem;
+      margin-top: 70px;
+      font-family: 'Open Sans', sans-serif;
+      letter-spacing: 0.6px;
+      box-shadow: inset 0 1px 3px #ffffff;
+    }
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 30px;
+      }
+      header h1 {
+        font-size: 2.3rem;
+        margin-bottom: 15px;
+      }
+      nav ul {
+        justify-content: flex-start;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      nav ul li a {
+        font-size: 1rem;
+        padding: 8px 14px;
+      }
+      main {
+        margin: 30px auto 0 auto;
+        padding: 0 10px;
+      }
+   
+}
+
+header nav ul li a {
+  cursor: pointer;
+}
+      .cta {
+        padding: 30px 20px;
+      }
+      .boton {
+        padding: 12px 30px;
+        font-size: 1rem;
+      }
+      .whatsapp-float {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.6);
+  cursor: pointer;
+  z-index: 1100;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+      html {
+  scroll-padding-top: 130px; /* Ajusta si tu header mide distinto */
+}
+    
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQYFSNYCN3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MQYFSNYCN3');
+</script>
+  <meta property="og:title" content="AR Consultoría Técnica - Soluciones profesionales en CABA" />
+  <meta property="og:description" content="Especialistas en Ley 5920, habilitaciones, higiene y seguridad, trámites APRA, DGROC, AGC y más. Tu tranquilidad, nuestro compromiso." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://arconsultoria5920.com/" />
+  <meta property="og:image" content="https://arconsultoria5920.com/IMAGENES/logo-celeste.png" />
+  <meta property="og:image:alt" content="Logo AR Consultoría Técnica" />
+  <meta property="og:locale" content="es_AR" />
+  <link rel="icon" href="IMAGENES/logo chico.png" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <h1>AR CONSULTORÍA TÉCNICA</h1>
+    <div class="nav-logo-container">
+    <nav>
+      <ul>
+        <li><a href="#quienes-somos">Quiénes Somos</a></li>
+        <li><a href="#ley5920">Ley 5920</a></li>
+        <li><a href="#habilitaciones">Habilitaciones</a></li>
+        <li><a href="#hys">Higiene y Seguridad</a></li>
+        <li><a href="#apra">APRA</a></li>
+        <li><a href="#simuladores5920">Simulaciones computarizadas</a></li>
+        <li><a href="#consultas">Consultas Oficiales</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <img src="IMAGENES/logo celeste.png" alt="Logo AR" style="height:70px; margin-left: 35px;" />
+    </div>
+  </header>
+
+  <main>
+    <section id="quienes-somos">
+  <h2>Quiénes Somos</h2>
+  <p>Somos una empresa que desde 2019 trabajamos en el cumplimiento de la Ley 5920 y en la gestión de trámites técnicos y administrativos vinculados a la seguridad, habilitaciones y normativas vigentes. </p>
+  <p>Nuestra experiencia abarca tanto la implementación de sistemas de autoprotección como la tramitación de habilitaciones y gestiones ante APRA, ofreciendo un servicio integral que combina conocimiento técnico y acompañamiento personalizado.</p>
+  <p>Lo que nos distingue es la manera en que abordamos cada proyecto: resolvemos problemas complejos que otros evitan, logrando que cada trámite sea aprobado, ya sea en plazos rápidos o procesos más extensos.</p>
+  <p>Nos caracteriza la claridad y la cercanía con cada cliente: no sólo gestionamos, sino que explicamos, guiamos y aconsejamos en cada etapa.</p>
+
+Esa forma de trabajar genera confianza, tranquilidad y relaciones a largo plazo. La mayoría de nuestros clientes llegan recomendados y deciden seguir trabajando con nosotros porque saben que su gestión está en manos seguras.</p>
+</section>
+    <section id="ley5920">
+      <h2>Trámite Ley 5920 - Plan de Autoprotección</h2>
+      <p>
+        La Ley 5920 establece la obligatoriedad del Plan de Autoprotección en establecimientos comerciales, industriales y demas lugares de afluencia publica para prevenir y actuar en situaciones de emergencias. En AR Consultoría Técnica nos encargamos de:
+      </p>
+      <ul>
+        <li>Evaluar el riesgo del establecimiento.</li>
+        <li>Diseñar el plan según normativa vigente.</li>
+        <li>Firmarlo como profesionales habilitados y presentarlo ante Defensa Civil para su aprobacion.</li>
+      </ul>
+      <p><strong>¿A quién aplica?</strong> A locales comerciales, instituciones educativas, establecimientos industriales, entre otros.</p>
+    </section>
+
+    <section id="habilitaciones">
+      <h2>Habilitaciones Comerciales</h2>
+      <p>
+        Realizamos el trámite completo para habilitar tu local en CABA:
+      </p>
+      <ul>
+        <li>Relevamiento técnico y documentación.</li>
+        <li>Presentación ante AGC y seguimiento hasta su aprobación.</li>
+      </ul>
+      <p><strong>Agilizá tu inicio de actividades</strong> cumpliendo con todas las exigencias legales.</p>
+    </section>
+
+    <section id="hys">
+      <h2>Servicios de Higiene y Seguridad en el Trabajo</h2>
+      <p>
+        Ofrecemos planes y asesoramiento en cumplimiento con la Ley 19.587:
+      </p>
+      <ul>
+        <li>Confección de Programas de Seguridad.</li>
+        <li>Capacitaciones y protocolos.</li>
+        <li>Mediciones de iluminacion</li>
+        <li>Mediciones de puesta a tierra</li>
+        <li>Mediciones de ruido</li>
+        <li>protocolos de trabajo seguro y programa de seguridad en obras</li>
+        <li>Auditorías técnicas y seguimiento.</li>
+      </ul>
+      <p><strong>Reducí riesgos laborales</strong> y cumplí con la normativa vigente.</p>
+    </section>
+
+    <section id="apra">
+      <h2>Trámites ante la Agencia de Protección Ambiental (APRA)</h2>
+      <p>
+        Gestionamos trámites ambientales como:
+      </p>
+      <ul>
+        <li>Evaluación y obtencion del certificado de Impacto Ambiental.</li>
+        <li>Planes de Manejo de Residuos.</li>
+        <li>Inscripcion al registro de generador de residuos patogenicos</li>
+        <li>excepcion de inscripcion al registro de generadores de residuos para pequeños gastronomicos y hoteleros</li>
+        <li>Inscripcion al RAC</li>
+      </ul>
+      <p><strong>Evitá sanciones</strong> cumpliendo con los requisitos de APRA.</p>
+    </section>
+
+    <section id="simuladores5920">
+      <h2>Simulaciones computarizadas para grupo 3 de la ley 5920</h2>
+      <p>
+        Algunos grupo 3 del sistema de autoproteccion requieren simulaciones computarizadas de incendio o evacuacion de personas.
+        Nosotros hacemos este trabajo de manera independiente de quien lleve adelante el sistema de autoproteccion.
+      </p>
+      <ul>
+        <li>Usamos los programas aprobados por el GCBA</li>
+        <li>Simulaciones de incendio en programa Pyrosim</li>
+        <li>Simulaciones de evacuacion de personas en programa pathfinder</li>
+        <li>Cotizaciones al instante</li>
+        <li>Tenemos experiencia en simulaciones en estadios de futbol y grandes establecimientos</li>
+      </ul>
+      <p><strong>Consulta sobre la simulacion que necesitas y respondemos a la brevedad.</strong></p>
+    </section>
+
+    <section id="consultas">
+      <h2>Consultas Técnicas Oficiales</h2>
+      <p>
+        Te representamos ante organismos como:
+      </p>
+      <ul>
+        <li>DGROC</li>
+        <li>AGC</li>
+        <li>Planeamiento Urbano</li>
+        <li>APRA</li>
+        <li>Defensa Civil</li>
+      </ul>
+      <p><strong>Consultas técnicas, aclaraciones, solicitudes formales</strong> para avanzar en proyectos o trámites detenidos.</p>
+    </section>
+
+     <section id="contacto" class="cta">
+    <h3>¿Tenés un trámite pendiente o urgente?</h3>
+    <p>Escribinos y resolvemos tu caso hoy mismo.</p>
+    <a href="https://wa.me/5491123501399" target="_blank" class="boton">Contactar</a>
+  </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 AR Consultoría Técnica - Todos los derechos reservados.</p>
+  </footer>
+  <a href="https://wa.me/5491123501399" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36px" height="36px" fill="none">
+    <circle cx="12" cy="12" r="12" fill="#25D366"/>
+    <path fill="#fff" d="M17.472 14.382c-.297-.148-1.758-.867-2.03-.967-.273-.099-.472-.148-.672.149-.2.297-.77.967-.942 1.164-.173.198-.347.223-.644.074-.297-.148-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.297.297-.495.099-.198.05-.371-.025-.52-.074-.148-.672-1.611-.92-2.205-.242-.579-.487-.5-.672-.51l-.572-.01c-.2 0-.52.074-.792.371s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.148.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347z"/>
+  </svg>
+</a>
+</body>
+</html>

@@ -194,16 +194,21 @@
       header {
         flex-direction: column;
         align-items: flex-start;
+        max-height: 120px; /* máximo alto que puede tener el header */
+        overflow: hidden; 
         padding: 15px 20px;
       }
       header h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        line-height: 1.2;
         margin-bottom: 15px;
       }
       nav ul {
         justify-content: flex-start;
-        gap: 12px;
+        gap: 8px;
         flex-wrap: wrap;
+        max-height: 60px; /* que el menú no tape toda la pantalla */
+    overflow-y: auto; /* si hay muchas opciones, que se pueda scrollear */
       }
       nav ul li a {
         font-size: 0.9rem;

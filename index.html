@@ -1,341 +1,157 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Habilitaciones y Ley 5920 en CABA | AR Consultoría Técnica</title>
-
-  <meta name="description" content="Habilitaciones comerciales y Ley 5920 en CABA. Gestión técnica completa para locales comerciales e industrias. Experiencia real, trato directo y resolución profesional." />
-
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-  <style>
-    :root{
-      --azul-oscuro:#0b2a3a;
-      --azul-medio:#114a63;
-      --azul-claro:#e9f4f9;
-      --gris-texto:#2e2e2e;
-      --acento:#1fb6d5;
-    }
-
-    *{box-sizing:border-box}
-
-    body{
-      margin:0;
-      font-family:'Open Sans',sans-serif;
-      color:var(--gris-texto);
-      background:#f6f8fa;
-      line-height:1.6;
-    }
-
-    /* HEADER */
-    header{
-      background:#fff;
-      border-bottom:1px solid #e0e0e0;
-      padding:16px 20px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      position:sticky;
-      top:0;
-      z-index:1000;
-    }
-
-    header strong{
-      font-family:'Montserrat',sans-serif;
-      font-weight:800;
-      color:var(--azul-oscuro);
-      font-size:1.3rem;
-      letter-spacing:.5px;
-    }
-
-    header a{
-      color:#fff;
-      padding:10px 18px;
-      border-radius:6px;
-    }
-
-    /* HERO */
-    .hero{
-      background:linear-gradient(135deg,#0b2a3a,#114a63);
-      color:#fff;
-      padding:60px 20px;
-    }
-
-    .hero .wrap{
-      max-width:1100px;
-      margin:auto;
-    }
-
-    .hero h1{
-      font-family:'Montserrat',sans-serif;
-      font-size:2rem;
-      font-weight:800;
-      margin-bottom:16px;
-    }
-
-    .hero p{
-      font-size:1.05rem;
-      max-width:700px;
-      opacity:.95;
-    }
-
-    .hero .cta{
-      margin-top:30px;
-    }
-
-    .hero .cta a{
-      background:#fff;
-      color:var(--azul-oscuro);
-      padding:14px 26px;
-      font-weight:700;
-      border-radius:6px;
-      text-decoration:none;
-      display:inline-block;
-    }
-
-    .hero .nota{
-      margin-top:10px;
-      font-size:.85rem;
-      opacity:.8;
-    }
-
-    /* SECCIONES */
-    section{
-      padding:60px 20px;
-    }
-
-    .wrap{
-      max-width:1100px;
-      margin:auto;
-    }
-
-    h2{
-      font-family:'Montserrat',sans-serif;
-      font-size:1.6rem;
-      font-weight:800;
-      color:var(--azul-oscuro);
-      margin-bottom:25px;
-    }
-
-    /* SERVICIOS PRINCIPALES */
-    .servicios{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:30px;
-    }
-
-    .card{
-      background:#fff;
-      border-radius:10px;
-      padding:30px;
-      box-shadow:0 10px 25px rgba(0,0,0,.06);
-    }
-
-    .card h3{
-      font-family:'Montserrat',sans-serif;
-      font-size:1.3rem;
-      margin-bottom:12px;
-      color:var(--azul-medio);
-    }
-
-    .card a{
-      display:inline-block;
-      margin-top:15px;
-      font-weight:700;
-      text-decoration:none;
-      color:var(--acento);
-    }
-
-    /* AUTORIDAD */
-    .autoridad{
-      background:var(--azul-claro);
-    }
-
-    .autoridad ul{
-      margin:0;
-      padding-left:20px;
-    }
-
-    .autoridad li{
-      margin-bottom:10px;
-      font-weight:600;
-    }
-
-    /* PASOS */
-    .pasos{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:20px;
-    }
-
-    .paso{
-      background:#fff;
-      padding:20px;
-      border-left:4px solid var(--acento);
-      box-shadow:0 6px 18px rgba(0,0,0,.05);
-    }
-
-    .paso strong{
-      display:block;
-      margin-bottom:6px;
-      color:var(--azul-oscuro);
-    }
-
-    /* LISTA LARGA */
-    .lista{
-      columns:1;
-    }
-
-    .lista li{
-      margin-bottom:8px;
-      font-weight:600;
-    }
-
-    /* CTA FINAL */
-    .cta-final{
-      background:var(--azul-oscuro);
-      color:#fff;
-      text-align:center;
-    }
-
-    .cta-final a{
-      background:#fff;
-      color:var(--azul-oscuro);
-      padding:14px 26px;
-      font-weight:700;
-      border-radius:6px;
-      text-decoration:none;
-      display:inline-block;
-      margin-top:20px;
-    }
-
-    footer{
-      background:#fff;
-      text-align:center;
-      padding:30px 20px;
-      font-size:.85rem;
-      color:#666;
-    }
-
-    /* DESKTOP */
-    @media(min-width:768px){
-      .hero h1{font-size:2.6rem}
-      .servicios{grid-template-columns:1fr 1fr}
-      .pasos{grid-template-columns:repeat(4,1fr)}
-      .lista{columns:2}
-    }
-  </style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AR Consultoría Técnica | Soluciones integrales en CABA</title>
+  <meta name="description" content="Habilitaciones comerciales, Ley 5920, seguridad e higiene, trámites APRA, gestión de residuos, fumigación, limpieza de tanques y asesoramiento técnico para obras en CABA.">
+  <meta name="theme-color" content="#082c43">
+  <meta property="og:title" content="AR Consultoría Técnica | Soluciones integrales en CABA">
+  <meta property="og:description" content="Nos ocupamos de la gestión técnica y normativa para que puedas concentrarte en tu negocio.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.arconsultoria5920.com/">
+  <meta property="og:image" content="https://www.arconsultoria5920.com/imagenes/imagen12.jpg">
+  <link rel="icon" href="imagenes/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQYFSNYCN3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MQYFSNYCN3');
-</script>
-  <meta property="og:title" content="AR Consultoría Técnica - Soluciones profesionales en CABA" />
-  <meta property="og:description" content="Especialistas en Ley 5920, habilitaciones, higiene y seguridad, trámites APRA, DGROC, AGC y más. Tu tranquilidad, nuestro compromiso." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://arconsultoria5920.com/" />
-  <meta property="og:image" content="https://arconsultoria5920.com/IMAGENES/logo-celeste.png" />
-  <meta property="og:image:alt" content="Logo AR Consultoría Técnica" />
-  <meta property="og:locale" content="es_AR" />
-  <link rel="icon" href="IMAGENES/logo chico.png" type="image/x-icon" />
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MQYFSNYCN3');
+  </script>
 </head>
 <body>
-  <header>
-  <strong>AR Consultoría Técnica</strong>
-  <a class="btn-whatsapp" 
-     href="https://wa.me/5491176444610" 
-     target="_blank" 
-     aria-label="Contactar por WhatsApp">
-    <img src="IMAGENES/WhatsApp.svg.png" alt="WhatsApp">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="AR Consultoría Técnica, inicio">
+        <img src="imagenes/nuevologo.png" alt="AR Consultoría Técnica" class="brand-logo">
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#servicios">Habilitaciones</a>
+        <a href="#certificaciones">Fumigaciónes, Limpieza de Campanas</a>
+        <a href="#obras">Registro de planos</a>
+        <a href="#nosotros">La consultora</a>
+      </nav>
+      <a class="button button-small" href="https://wa.me/5491176444610" target="_blank" rel="noopener noreferrer">Contactar <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-photo" role="img" aria-label="Fachada de un comercio en la ciudad"></div>
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">AR CONSULTORÍA TÉCNICA · CABA</p>
+        <h1>¿Tenés un comercio o una fabrica y tenes que habilitarla?</h1>
+        <p class="hero-lead">¿Te llegó una inspección? ¿Necesitás adecuarte a la normativa o levantar una clausura?</p>
+        <p class="hero-copy">Somos una empresa que gestiona todo tipo de riesgo. Contamos con un equipo de profesionales en todas las áeas necesarias para que cumplas con la normativa y puedas funcionar sin problemas</p>
+        <a class="button button-gold" href="https://wa.me/5491176444610" target="_blank" rel="noopener noreferrer">Hablemos de tu caso <span aria-hidden="true">→</span></a>
+        <div class="hero-proof"><span class="proof-line"></span><span>Gestión integral para comercios, industrias y obras</span></div>
+      </div>
+      <div class="hero-bottom"><span>Soluciones integrales</span><span class="hero-bottom-line"></span><span>Para que tu negocio funcione sin problemas</span></div>
+    </section>
+
+    <section class="intro section-pad" id="nosotros">
+      <div class="container intro-grid">
+        <div>
+          <p class="eyebrow eyebrow-dark">UN SOLO EQUIPO TÉCNICO</p>
+          <h2>Nos ocupamos de la parte técnica. <em>Vos, de tu negocio.</em></h2>
+        </div>
+        <div class="intro-text">
+          <p>Somos una consultora que gestiona distintos tipos de riesgo y reúne profesionales de las áreas necesarias para que tu actividad cumpla con la normativa aplicable.</p>
+          <p>Analizamos cada situación, definimos los pasos y acompañamos la gestión de principio a fin.</p>
+          <a class="text-link" href="https://wa.me/5491176444610" target="_blank" rel="noopener noreferrer">Contanos qué necesitás <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section section-pad" id="servicios">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-dark">QUÉ PODEMOS RESOLVER</p>
+          <h2>Soluciones para cada etapa de tu actividad</h2>
+          <p>Desde la apertura de un local hasta los controles técnicos periódicos.</p>
+        </div>
+        <article class="feature-card feature-habilitaciones">
+          <div class="feature-image image-store" role="img" aria-label="Local comercial"></div>
+          <div class="feature-content">
+            <span class="number-tag">01 / APERTURA Y REGULARIZACIÓN</span>
+            <h3>Habilitaciones comerciales</h3>
+            <p>¿Estás por abrir un local comercial o una industria? Te orientamos sobre los requisitos aplicables y gestionamos la documentación necesaria para adecuar tu establecimiento.</p>
+            <ul class="check-list"><li>Análisis de actividad y requisitos</li><li>Preparación y presentación de documentación</li><li>Seguimiento del trámite y asesoramiento</li></ul>
+            <a class="text-link" href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20una%20habilitaci%C3%B3n%20comercial." target="_blank" rel="noopener noreferrer">Consultar habilitaciones <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="feature-card feature-reverse">
+          <div class="feature-image image-autoproteccion" role="img" aria-label="Elementos y plano de seguridad contra incendios"></div>
+          <div class="feature-content">
+            <span class="number-tag">02 / PREVENCIÓN Y SEGURIDAD</span>
+            <h3>Sistema de Autoprotección · Ley 5920</h3>
+            <p>El sistema contempla la organización y las medidas para responder ante emergencias. Evaluamos las necesidades del establecimiento y gestionamos la documentación técnica correspondiente.</p>
+            <ul class="check-list"><li>Confección y presentación del sistema</li><li>Gestión ante los organismos competentes</li><li>Asesoramiento sobre simulacros y vigencia</li></ul>
+            <a class="text-link" href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20la%20Ley%205920." target="_blank" rel="noopener noreferrer">Consultar Ley 5920 <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <div class="section-heading compact-heading">
+          <p class="eyebrow eyebrow-dark">GESTIÓN TÉCNICA CONTINUA</p>
+          <h2>También resolvemos los requisitos que vienen después</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-tile"><div class="tile-image image-higiene" role="img" aria-label="Inspección técnica de seguridad e higiene"></div><div class="tile-body"><span class="tile-index">03</span><h3>Seguridad e higiene</h3><p>Servicio mensual, documentación técnica, programas de seguridad, mediciones de puesta a tierra, ruido e iluminación y certificados de ignifugado.</p><a href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20seguridad%20e%20higiene." target="_blank" rel="noopener noreferrer">Consultar <span aria-hidden="true">→</span></a></div></article>
+          <article class="service-tile"><div class="tile-image image-residuos" role="img" aria-label="Contenedores para clasificación de residuos"></div><div class="tile-body"><span class="tile-index">04</span><h3>Gestión de residuos</h3><p>Orientación e inscripción en registros de generadores según el tipo de residuo.</p><a href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20gesti%C3%B3n%20de%20residuos." target="_blank" rel="noopener noreferrer">Consultar <span aria-hidden="true">→</span></a></div></article>
+          <article class="service-tile"><div class="tile-image image-apra" role="img" aria-label="Gestión ambiental"></div><div class="tile-body"><span class="tile-index">05</span><h3>Trámites ante APRA</h3><p>Certificados de aptitud ambiental, registros y evaluaciones ambientales.</p><a href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20un%20tr%C3%A1mite%20ambiental." target="_blank" rel="noopener noreferrer">Consultar <span aria-hidden="true">→</span></a></div></article>
+        </div>
+        <div class="certifications-block" id="certificaciones">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow eyebrow-dark">TERCER SERVICIO ESTELAR</p>
+            <h2>Certificaciones y servicios registrados en APRA</h2>
+            <p>Somos una empresa registrada para gestionar y certificar servicios esenciales para el funcionamiento de tu establecimiento.</p>
+          </div>
+          <div class="service-grid certification-grid">
+            <article class="service-tile"><div class="tile-image image-fumigacion" role="img" aria-label="Servicio profesional de fumigación"></div><div class="tile-body"><span class="tile-index">01 / CONTROL DE PLAGAS</span><h3>Fumigación y desratización</h3><p>Servicio y certificación para comercios e industrias.</p><a href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20fumigaci%C3%B3n." target="_blank" rel="noopener noreferrer">Consultar <span aria-hidden="true">→</span></a></div></article>
+            <article class="service-tile"><div class="tile-image image-campana" role="img" aria-label="Campana extractora de cocina profesional"></div><div class="tile-body"><span class="tile-index">02 / ESTABLECIMIENTOS GASTRONÓMICOS</span><h3>Limpieza de campanas y conductos</h3><p>Limpieza y certificación para establecimientos gastronómicos.</p><a href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20limpieza%20de%20campanas." target="_blank" rel="noopener noreferrer">Consultar <span aria-hidden="true">→</span></a></div></article>
+            <article class="service-tile"><div class="tile-image image-tanques" role="img" aria-label="Tanque de agua en una instalación edilicia"></div><div class="tile-body"><span class="tile-index">03 / AGUA SEGURA</span><h3>Limpieza y certificación de tanques</h3><p>Limpieza y certificación con análisis físico y bacteriológico realizado por laboratorio habilitado.</p><a href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20limpieza%20de%20tanques." target="_blank" rel="noopener noreferrer">Consultar <span aria-hidden="true">→</span></a></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works-section section-pad" id="obras">
+      <div class="container works-grid">
+        <div class="works-photo" role="img" aria-label="Planos técnicos y elementos de seguridad en una obra"></div>
+        <div class="works-content">
+          <p class="eyebrow">OBRAS Y REGISTRO DE PLANOS</p>
+          <h2>¿Vas a iniciar una obra o necesitás registrar un plano?</h2>
+          <p>Te asesoramos en la gestión técnica de proyectos, documentación y registros vinculados a obras en CABA.</p>
+          <div class="works-list"><div><span>01</span><p>Adecuación y registro de proyectos</p></div><div><span>02</span><p>Permisos y cartel de obra</p></div><div><span>03</span><p>Registro de planos e instalaciones</p></div><div><span>04</span><p>Planos y documentación técnica de obra</p></div><div><span>05</span><p>Asesoramiento técnico durante el desarrollo de la obra</p></div></div>
+          <a class="button button-gold" href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20una%20obra%20o%20registro%20de%20planos." target="_blank" rel="noopener noreferrer">Consultar por obras y planos <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section section-pad">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow eyebrow-dark">UN PROCESO CLARO</p><h2>De la consulta a la gestión</h2><p>Un método de trabajo pensado para ordenar cada caso.</p></div>
+        <div class="process-grid"><article><span>01</span><h3>Escuchamos</h3><p>Conocemos tu actividad y el estado de tu trámite.</p></article><article><span>02</span><h3>Evaluamos</h3><p>Identificamos requisitos, documentación y próximos pasos.</p></article><article><span>03</span><h3>Gestionamos</h3><p>Preparamos la documentación y hacemos el seguimiento.</p></article><article><span>04</span><h3>Acompañamos</h3><p>Te informamos sobre avances y acciones necesarias.</p></article></div>
+      </div>
+    </section>
+
+    <section class="closing-cta">
+      <div class="closing-image" role="img" aria-label="Vista urbana de Buenos Aires al atardecer"></div><div class="closing-overlay"></div>
+      <div class="container closing-content"><p class="eyebrow">AR CONSULTORÍA TÉCNICA</p><h2>Nos llamás a nosotros.<br><em>Vos seguís con lo tuyo.</em></h2><p>Soluciones técnicas y normativas para que tu negocio funcione sin problemas.</p><a class="button button-gold" href="https://wa.me/5491176444610" target="_blank" rel="noopener noreferrer">Contactar por WhatsApp <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a href="#inicio" aria-label="Volver al inicio"><img src="imagenes/nuevologo.png" alt="AR Consultoría Técnica" class="footer-logo"></a><p>Consultoría técnica para comercios, industrias y obras en CABA.</p><a class="footer-contact" href="https://wa.me/5491176444610" target="_blank" rel="noopener noreferrer">WhatsApp · 11 7644-4610</a><small>© <span id="year">2026</span> AR Consultoría Técnica. Todos los derechos reservados.</small></div></footer>
+  <a class="whatsapp-float" href="https://wa.me/5491176444610" target="_blank" rel="noopener noreferrer" aria-label="Contactar a AR Consultoría Técnica por WhatsApp">
+  <img src="imagenes/whatsapp.png">
 </a>
-</header>
-
-<section class="hero">
-  <div class="wrap">
-    <h1>Habilitaciones comerciales y Ley 5920 en CABA<br>sin errores ni demoras innecesarias</h1>
-    <p>Acompañamos a dueños de Comercios e industrias en todos los trámites técnicos exigidos por el GCBA, con experiencia real y gestión completa.</p>
-    <div class="cta">
-      <a href="https://wa.me/5491176444610" target="_blank">Consultar por WhatsApp</a>
-      <div class="nota">Escribinos y evaluemos tu caso antes de avanzar</div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Nuestros Servicios</h2>
-    <div class="servicios">
-      <div class="card">
-        <h3>Habilitaciones comerciales</h3>
-        <p>Gestión completa para habilitar tu local en CABA. Relevamiento, documentación, presentación y seguimiento hasta la aprobación.</p>
-        <a href="https://wa.me/5491176444610">Consultar habilitación →</a>
-      </div>
-      <div class="card">
-        <h3>Plan de Autoprotección – Ley 5920</h3>
-        <p>Confección, presentación y aprobación del sistema de autoprotección exigido por Defensa Civil, firmado por profesionales habilitados.</p>
-        <a href="https://wa.me/5491176444610">Consultar Ley 5920 →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="autoridad">
-  <div class="wrap">
-    <h2>Experiencia técnica aplicada</h2>
-    <ul>
-      <li>Gestión real de trámites en CABA desde 2017</li>
-      <li>Experiencia con AGC, APRA, DGROC y Defensa Civil</li>
-      <li>Conocimiento normativo actualizado</li>
-      <li>Acompañamiento técnico de principio a fin</li>
-    </ul>
-    <p><strong>No trabajamos en serie.</strong> Analizamos cada caso y lo resolvemos correctamente.</p>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Cómo trabajamos</h2>
-    <div class="pasos">
-      <div class="paso"><strong>Consulta</strong>Evaluamos tu situación real</div>
-      <div class="paso"><strong>Evaluación</strong>Definimos requisitos y estrategia</div>
-      <div class="paso"><strong>Gestión</strong>Presentación y seguimiento</div>
-      <div class="paso"><strong>Resolución</strong>Aprobación o regularización</div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Otros trámites que realizamos</h2>
-    <ul class="lista">
-      <li>Higiene y Seguridad laboral para empresas (Ley 19.587)</li>
-      <li>Programas y protocolos de seguridad</li>
-      <li>Mediciones técnicas</li>
-      <li>Impacto Ambiental</li>
-      <li>Gestión de residuos</li>
-      <li>Consultas técnicas oficiales</li>
-      <li>Levantamiento de clausura</li>
-      <li>Simulaciones computarizadas Ley 5920</li>
-    </ul>
-  </div>
-</section>
-
-<section class="cta-final">
-  <div class="wrap">
-    <h2>¿Tenés un trámite pendiente o una inspección?</h2>
-    <p>ATENCIÓN DIRECTA Y PROFESIONAL</p>
-    <a href="https://wa.me/5491176444610" target="_blank">Escribir por WhatsApp</a>
-  </div>
-</section>
-
-<footer>
-  © AR Consultoría Técnica – Consultoría técnica en CABA
-</footer>
-
 </body>
 </html>

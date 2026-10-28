@@ -1,0 +1,15 @@
+AR CONSULTORÍA TÉCNICA — ARCHIVOS ACTUALIZADOS
+
+Incluye:
+- index.html actualizado
+- páginas específicas por servicio
+- sitemap.xml
+- robots.txt
+
+IMPORTANTE:
+1. Subí estos archivos a la misma carpeta raíz del repositorio donde está actualmente index.html.
+2. No borres ni reemplaces styles.css, la carpeta recursos/ ni la carpeta imágenes/ (incluyendo sus archivos). Las páginas nuevas reutilizan esas rutas y clases CSS.
+3. La web conserva el número de WhatsApp y el ID de Google Analytics presentes en el index recibido. Quité del index el evento de conversión de Google Ads que se disparaba al cargar la página, porque así podía contar visitas como si fueran contactos. La conversión debe configurarse para dispararse solo tras una acción real de contacto.
+4. Verificá las páginas publicadas en móvil y escritorio. Las imágenes de fondo dependen de que las clases CSS existentes incluyan las imágenes correspondientes.
+5. El contenido es una primera versión SEO. La indexación y la posición en Google no están garantizadas; revisá los requisitos normativos concretos de cada servicio antes de publicar afirmaciones específicas.
+6. La navegación principal enlaza a páginas de servicio. Las secciones originales de la página principal se conservan.

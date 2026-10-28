@@ -17,6 +17,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+<style>
+    .nav-more { position: relative; display: inline-block; }
+    .nav-more summary { cursor: pointer; list-style: none; }
+    .nav-more summary::-webkit-details-marker { display: none; }
+    .nav-more-menu { position: absolute; top: 100%; left: 0; z-index: 1000; min-width: 230px; padding: 10px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,.16); border-radius: 8px; }
+    .nav-more-menu a { display: block; padding: 9px 10px; white-space: nowrap; }
+    @media (max-width: 760px) {
+      .main-nav { flex-wrap: wrap; }
+      .nav-more-menu { position: static; box-shadow: none; min-width: 0; }
+      .nav-more-menu a { white-space: normal; }
+    }
+  </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QQVSJBLNQ"></script>
 <script>
@@ -26,11 +38,6 @@
 
   gtag('config', 'G-0QQVSJBLNQ');
 </script>
-  <!-- Event snippet for Contacto conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-17548987353/Q3oxCK_Ztp0dENmXgbBB'});
-</script>
-
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -40,9 +47,24 @@
         <img src="recursos/nuevologo.png" alt="AR Consultoría Técnica" class="brand-logo">
       </a>
       <nav class="main-nav" aria-label="Navegación principal">
-        <a href="#servicios">Habilitaciones</a>
-        <a href="#certificaciones">Fumigaciónes, Limpieza de Campanas</a>
-        <a href="#obras">Registro de planos</a>
+        <a href="habilitaciones-caba.html">Habilitaciones</a>
+        <a href="sistema-autoproteccion-ley-5920.html">Ley 5920</a>
+        <a href="limpieza-campanas-conductos.html">Limpieza de campanas</a>
+        <a href="certificado-fumigacion.html">Fumigación</a>
+        <details class="nav-more">
+          <summary>Más servicios</summary>
+          <div class="nav-more-menu">
+            <a href="limpieza-tanques-agua.html">Limpieza de tanques</a>
+            <a href="registros-ambientales-apra.html">Trámites ambientales APRA</a>
+            <a href="seguridad-higiene.html">Seguridad e Higiene</a>
+            <a href="registros-planos.html">Registro de planos</a>
+            <a href="puesta-a-tierra.html">Puesta a tierra</a>
+            <a href="carga-de-fuego.html">Estudio de carga de fuego</a>
+            <a href="medicion-iluminacion.html">Medición de iluminación</a>
+            <a href="medicion-ruido.html">Medición de ruido</a>
+            <a href="certificado-ignifugo.html">Certificado ignífugo</a>
+          </div>
+        </details>
         <a href="#nosotros">La consultora</a>
       </nav>
       <a class="button button-small" href="https://wa.me/5491176444610" target="_blank" rel="noopener noreferrer">Contactar <span aria-hidden="true">↗</span></a>
@@ -92,7 +114,8 @@
             <h3>Habilitaciones comerciales</h3>
             <p>¿Estás por abrir un local comercial o una industria? Te orientamos sobre los requisitos aplicables y gestionamos la documentación necesaria para adecuar tu establecimiento.</p>
             <ul class="check-list"><li>Análisis de actividad y requisitos</li><li>Preparación y presentación de documentación</li><li>Seguimiento del trámite y asesoramiento</li></ul>
-            <a class="text-link" href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20una%20habilitaci%C3%B3n%20comercial." target="_blank" rel="noopener noreferrer">Consultar habilitaciones <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="habilitaciones-caba.html">Más información sobre habilitaciones <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20una%20habilitaci%C3%B3n%20comercial." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp <span aria-hidden="true">→</span></a>
           </div>
         </article>
 
@@ -103,7 +126,8 @@
             <h3>Sistema de Autoprotección · Ley 5920</h3>
             <p>La Ley 5920 de la Ciudad Autónoma de Buenos Aires obliga a edificios, establecimientos comerciales, industriales, educativos y de salud a contar con un Sistema de Autoprotección debidamente implementado, aprobado por la Dirección General de Defensa Civil del GCBA. En AR CONSULTORÍA TÉCNICA desarrollamos e implementamos el sistema completo: diagnóstico, plan de emergencia, formación de brigadas, señalización y simulacros documentados..</p>
             <ul class="check-list"><li>Confección y presentación del sistema</li><li>Gestión ante los organismos competentes</li><li>Asesoramiento sobre simulacros y vigencia</li></ul>
-            <a class="text-link" href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20la%20Ley%205920." target="_blank" rel="noopener noreferrer">Consultar Ley 5920 <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="sistema-autoproteccion-ley-5920.html">Más información sobre el Sistema de Autoprotección <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20la%20Ley%205920." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp <span aria-hidden="true">→</span></a>
           </div>
         </article>
 
@@ -112,9 +136,17 @@
           <h2>También resolvemos los requisitos que vienen después</h2>
         </div>
         <div class="service-grid">
-          <article class="service-tile"><div class="tile-image image-higiene" role="img" aria-label="Inspección técnica de seguridad e higiene"></div><div class="tile-body"><span class="tile-index">03</span><h3>Seguridad e higiene</h3><p>Servicio mensual, documentación técnica, programas de seguridad, mediciones de puesta a tierra, ruido e iluminación y certificados de ignifugado.</p><a href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20seguridad%20e%20higiene." target="_blank" rel="noopener noreferrer">Consultar <span aria-hidden="true">→</span></a></div></article>
+          <article class="service-tile"><div class="tile-image image-higiene" role="img" aria-label="Inspección técnica de seguridad e higiene"></div><div class="tile-body"><span class="tile-index">03</span><h3>Seguridad e higiene</h3><p>Servicio mensual y documentación técnica, programas de seguridad, medición de puesta a tierra, estudios de carga de fuego, mediciones de iluminación y ruido, y certificados de tratamiento ignífugo.</p><a href="seguridad-higiene.html">Ver servicio <span aria-hidden="true">→</span></a></div></article>
           <article class="service-tile"><div class="tile-image image-residuos" role="img" aria-label="Contenedores para clasificación de residuos"></div><div class="tile-body"><span class="tile-index">04</span><h3>Gestión de residuos</h3><p>Orientación e inscripción en registros de generadores según el tipo de residuo.</p><a href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20gesti%C3%B3n%20de%20residuos." target="_blank" rel="noopener noreferrer">Consultar <span aria-hidden="true">→</span></a></div></article>
-          <article class="service-tile"><div class="tile-image image-apra" role="img" aria-label="Gestión ambiental"></div><div class="tile-body"><span class="tile-index">05</span><h3>Trámites ante APRA</h3><p>Certificados de aptitud ambiental, registros y evaluaciones ambientales.</p><a href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20un%20tr%C3%A1mite%20ambiental." target="_blank" rel="noopener noreferrer">Consultar <span aria-hidden="true">→</span></a></div></article>
+          <article class="service-tile"><div class="tile-image image-apra" role="img" aria-label="Gestión ambiental"></div><div class="tile-body"><span class="tile-index">05</span><h3>Trámites ante APRA</h3><p>Certificados de aptitud ambiental, registros y evaluaciones ambientales.</p><a href="registros-ambientales-apra.html">Ver todos los trámites ambientales <span aria-hidden="true">→</span></a></div></article>
+        </div>
+        <div class="service-grid" aria-label="Más información sobre servicios">
+          
+          <article class="service-tile"><div class="tile-body"><h3>Medición de puesta a tierra</h3><p>Protocolo de puesta a tierra y continuidad de masas conforme al procedimiento SRT aplicable.</p><a href="puesta-a-tierra.html">Más información <span aria-hidden="true">→</span></a></div></article>
+          <article class="service-tile"><div class="tile-body"><h3>Estudio de carga de fuego</h3><p>Evaluación técnica de la carga combustible y documentación sobre protección contra incendios.</p><a href="carga-de-fuego.html">Más información <span aria-hidden="true">→</span></a></div></article>
+          <article class="service-tile"><div class="tile-body"><h3>Medición de iluminación laboral</h3><p>Evaluación de niveles de iluminación en ambientes y puestos de trabajo conforme al protocolo SRT 84/12.</p><a href="medicion-iluminacion.html">Más información <span aria-hidden="true">→</span></a></div></article>
+          <article class="service-tile"><div class="tile-body"><h3>Medición de ruido laboral</h3><p>Evaluación de exposición al ruido y documentación técnica conforme al protocolo SRT 85/12.</p><a href="medicion-ruido.html">Más información <span aria-hidden="true">→</span></a></div></article>
+          <article class="service-tile"><div class="tile-body"><h3>Certificado de tratamiento ignífugo</h3><p>Documentación del tratamiento retardante de llama aplicado a materiales, según el alcance del servicio.</p><a href="certificado-ignifugo.html">Más información <span aria-hidden="true">→</span></a></div></article>
         </div>
         <div class="certifications-block" id="certificaciones">
           <div class="section-heading compact-heading">
@@ -123,9 +155,9 @@
             <p>Somos una empresa registrada para gestionar y certificar servicios esenciales para el funcionamiento de tu establecimiento.</p>
           </div>
           <div class="service-grid certification-grid">
-            <article class="service-tile"><div class="tile-image image-fumigacion" role="img" aria-label="Servicio profesional de fumigación"></div><div class="tile-body"><span class="tile-index">01 / CONTROL DE PLAGAS</span><h3>Fumigación y desratización</h3><p>Servicio y certificación para comercios e industrias.</p><a href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20fumigaci%C3%B3n." target="_blank" rel="noopener noreferrer">Consultar <span aria-hidden="true">→</span></a></div></article>
-            <article class="service-tile"><div class="tile-image image-campana" role="img" aria-label="Campana extractora de cocina profesional"></div><div class="tile-body"><span class="tile-index">02 / ESTABLECIMIENTOS GASTRONÓMICOS</span><h3>Limpieza de campanas y conductos</h3><p>Limpieza y certificación para establecimientos gastronómicos.</p><a href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20limpieza%20de%20campanas." target="_blank" rel="noopener noreferrer">Consultar <span aria-hidden="true">→</span></a></div></article>
-            <article class="service-tile"><div class="tile-image image-tanques" role="img" aria-label="Tanque de agua en una instalación edilicia"></div><div class="tile-body"><span class="tile-index">03 / AGUA SEGURA</span><h3>Limpieza y certificación de tanques</h3><p>Limpieza y certificación con análisis físico y bacteriológico realizado por laboratorio habilitado.</p><a href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20limpieza%20de%20tanques." target="_blank" rel="noopener noreferrer">Consultar <span aria-hidden="true">→</span></a></div></article>
+            <article class="service-tile"><div class="tile-image image-fumigacion" role="img" aria-label="Servicio profesional de fumigación"></div><div class="tile-body"><span class="tile-index">01 / CONTROL DE PLAGAS</span><h3>Fumigación y desratización</h3><p>Servicio y certificación para comercios e industrias.</p><a href="certificado-fumigacion.html">Más información</a><a href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20fumigaci%C3%B3n." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp <span aria-hidden="true">→</span></a></div></article>
+            <article class="service-tile"><div class="tile-image image-campana" role="img" aria-label="Campana extractora de cocina profesional"></div><div class="tile-body"><span class="tile-index">02 / ESTABLECIMIENTOS GASTRONÓMICOS</span><h3>Limpieza de campanas y conductos</h3><p>Limpieza y certificación para establecimientos gastronómicos.</p><a href="limpieza-campanas-conductos.html">Más información</a><a href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20limpieza%20de%20campanas." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp <span aria-hidden="true">→</span></a></div></article>
+            <article class="service-tile"><div class="tile-image image-tanques" role="img" aria-label="Tanque de agua en una instalación edilicia"></div><div class="tile-body"><span class="tile-index">03 / AGUA SEGURA</span><h3>Limpieza y certificación de tanques</h3><p>Limpieza y certificación con análisis físico y bacteriológico realizado por laboratorio habilitado.</p><a href="limpieza-tanques-agua.html">Más información</a><a href="https://wa.me/5491176444610?text=Hola%2C%20quiero%20consultar%20por%20limpieza%20de%20tanques." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp <span aria-hidden="true">→</span></a></div></article>
           </div>
         </div>
       </div>
